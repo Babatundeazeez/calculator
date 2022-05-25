@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview_calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="preview.css">
+</head>
+<body>
+    <div id="frameclose" class="frame">
+        <!-- first section -->
+
+        <div class="first-section">
+            <p class="first-cal">Calculator</p>
+            <div class="first-icon">
+                    <i class="fa fa-minus"></i>
+                    <i class="fa fa-square-o"></i>
+                    <i onclick="closes()" class="fa fa-close"></i>
+            </div>
+        </div>
+        <!-- menu section on calculator -->
+            <div class="menu">
+                <div class="bbb">
+                    <h4 style="margin-top: 20px;">Calculator</h4>
+                <div class="hov" style="display: flex; align-items: center;">
+                    <i class="fa fa-calculator"></i>
+                    <p class="margin"><a href="previewcal.html">Standard</a></p>
+                </div>
+                <div class="hov" style="display: flex; align-items: center;">
+                    <div><img src="./Calcuimg/scientific.png" alt="" width="30px"></div>
+                    <p class="margin">Scientific</p>
+                </div>
+                <div class="hov" style="display: flex; align-items: center;">
+                    <i class="fa fa-bar-chart"></i>
+                    <p class="margin">Graphing</p>
+                </div>
+                <div class="hov" style="display: flex; align-items: center;">
+                    <i class="fa fa-code"></i>
+                    <p class="margin">Programmer</p>
+                </div>
+                <div class="hov" style="display: flex; align-items: center;">
+                    <div><img src="./Calcuimg/date.png" alt="" width="30px"></div>
+                    <p class="margin">Date Calculation</p>
+                </div>
+                <h3>Converter</h3>
+                <div class="hov" style="display: flex; align-items: center;">
+                    <i class="fa fa-cube"></i>
+                    <p class="margin">Volume</p>
+                </div>
+                <div class="hov" style="display: flex; align-items: center;">
+                    <i class="fa fa-database"></i>
+                    <p class="margin">currency</p>
+                </div>
+                
+                <div class="hov" style="display: flex; align-items: center;">
+                    <i class="fa fa-balance-scale"></i>
+                    <p class="margin">Weighing and Mass</p>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="hov" style="display: flex; align-items: center;">
+                    <i class="fa fa-wpforms"></i>
+                    <p class="margin">Data</p>
+                </div>
+                <div class="hov" style="display: flex; align-items: center;">
+                    <i class="fa fa-thermometer-1"></i>
+                    <p class="margin">Pressure</p>
+                </div>
+                <div class="hov" style="display: flex; align-items: center;">
+                    <i class="fa fa-safari"></i>
+                    <p class="margin">Pressure</p>
+                </div>
+                <div class="hov" style="display: flex; align-items: center;">
+                    <i class="fa fa-clock-o"></i>
+                    <p class="margin">Time</p>
+                </div>
+                <div class="hov" style="display: flex; align-items: center;">
+                    <i class="fa fa-bolt"></i>
+                    <p class="margin">Power</p>
+                </div>
+                <div></div>
+            </div>
+
+            </div>
+
+
+
+
+            <!-- second section  -->
+
+        <div class="second-section">
+            <i onclick="menus()" class=" second-icon fa fa-align-justify"></i>
+                <p>Standard</p>
+                <i class="fa fa-external-link"></i>
+             <button onclick="on()" class="second-btn">ON/OFF</button>
+        </div>
+        <!-- Display section section -->
+        <div id="screenon" class="third-section">
+            <p class="display1" id="screen2"></p>
+            <h3 class="display1" id="screen1"></h3>
+        </div>
+
+        <!-- Number button data section -->
+        <div class="section-btn">
+            <button class="bnt">MC</button>
+            <button class="bnt">MR</button>
+            <button class="bnt">M+</button>
+            <button class="btn section-btn1">M-</button>
+            <button class="bnt"><sup>1</sup>/<sub>x</sub></button>
+            <button onclick="expon()" class="bnt"><sub>x</sub>2</button>
+            <button onclick="squareroot()" class="bnt"><sup></sup>√<sub>x</sub></button>
+            <button onclick="square()" class="bnt section-btn1"><sup>2</sup>√<sub>x</sub></button>
+            <button onclick="operator()" class="bnt">%</button>
+            <button onclick="del()" class="bnt">DEL</button>
+            <button onclick="clears('C')" class="bnt">C</button>
+            <button onclick="operator('/')" class=" bnt section-btn1">/</button>
+            <button onclick="data(7)" class="font-bnt">7</button>
+            <button onclick="data(8)" class="font-bnt">8</button>
+            <button onclick="data(9)" class="font-bnt">9</button>
+            <button onclick="operator('*')" class="bnt section-btn1">*</button>
+            <button onclick="data(4)" class="font-bnt">4</button>
+            <button onclick="data(5)" class="font-bnt">5</button>
+            <button onclick="data(6)" class="font-bnt">6</button>
+            <button onclick="operator('-')" class="bnt section-btn1">-</button>
+            <button onclick="data(1)" class="font-bnt">1</button>
+            <button onclick="data(2)" class="font-bnt">2</button>
+            <button onclick="data(3)" class="font-bnt">3</button>
+            <button onclick="operator('+')" class="bnt section-btn1">+</button>
+            <button class="bnt section-btn1"><sup>1</sup>/<sub>-</sub></button>
+            <button onclick="data(0)" class="font-bnt">0</button>
+            <button onclick="data('.')" class="font-bnt">.</button>
+            <button onclick="equalto()" class="font-ans section-btn1">=</button>
+        </div>
+
+    </div>
+    
+</body>
+</html>
+<script>
+    let screenOne = document.getElementById('screen1')
+    let screenTwo = document.getElementById('screen2')
+    let ope;
+    let saveValue;
+    let screenOn = document.getElementById('screenon')
+    let toggle = 0;
+    let frameClose = document.getElementById('frameclose')
+    let menuJustify = document.querySelector('.menu')
+
+
+
+
+
+    function data(num) {
+        screenOne.innerHTML += num
+    }
+
+    function operator(operate) {
+        ope = operate
+        saveValue= screenOne.innerHTML
+        screenTwo.innerHTML = screenOne.innerHTML
+        screenTwo.innerHTML +=ope 
+        if (screenTwo.innerHTML!=='' && ope!=='') {
+            screenOne.innerHTML=''
+        }
+        
+    }
+
+    function expon() {
+        screenOne.innerHTML =Math.pow(screenOne.innerHTML,2)
+        
+    }
+    function squareroot() {
+        screenOne.innerHTML = Math.sqrt(screenOne.innerHTML)
+    }
+    function square() {
+        screenOne.innerHTML = 2* Math.sqrt(screenOne.innerHTML)
+    }
+
+    function clears() {
+        screenOne.innerHTML = "";
+        screenTwo.innerHTML = "";
+    }
+
+    function del() {
+        screenTwo.innerHTML = screenTwo.innerHTML.slice(0,-1)
+        screenOne.innerHTML= screenOne.innerHTML.slice(0,-1)
+        
+    }
+
+    function equalto() {
+        screenTwo.innerHTML += screenOne.innerHTML
+        let answer;
+        if (ope=='+') {
+            answer= Number(saveValue) + Number(screenOne.innerHTML)
+        }
+        else if (ope=='-') {
+            answer = Number(saveValue) - Number(screenOne.innerHTML)
+        }
+        else if (ope=='*') {
+            answer = Number(saveValue) * Number(screenOne.innerHTML)
+        }
+        else if (ope=='/') {
+            answer = Number(saveValue) / Number(screenOne.innerHTML)
+        }
+        else {
+            answer = 'Error'
+        }
+        screenOne.innerHTML = answer
+    }
+
+    function on() {
+        toggle++
+        if (toggle=='1') {
+            screenOn.style.background = 'black'
+        }
+        else {
+            screenOn.style.background= 'linen'
+        }
+        setTimeout(() => {
+            toggle=0
+        }, 1000);
+        clears()
+    }
+
+    function closes() {
+        frameClose.style.display = 'none'
+        
+    }
+    function menus() {
+        menuJustify.classList.toggle('changeme')
+
+        
+    }
+</script>
